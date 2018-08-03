@@ -8,19 +8,20 @@ public class RemoveDuplicates {
     public int remove(int[] nums) {
         if (nums.length == 0)
             return 0;
-        int index = 1;
-        for (int i=0; i<nums.length; i++) {
+        int index = 0;
+        for (int i=1; i<nums.length; i++) {
             if (nums[i] != nums[index]) {
                 index++;
                 nums[index] = nums[i];
             }
+            System.out.println(nums[index]);
         }
-        return index;
+        return index+1;
     }
 
     public static void main(String[] args) {
         RemoveDuplicates removeDuplicates = new RemoveDuplicates();
-        int num[] = {0,0,1,1,1,2,2,3,3,4};
+        int num[] = {1,1,2};
         System.out.println(removeDuplicates.remove(num));
     }
 }
