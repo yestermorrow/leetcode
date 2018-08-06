@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class SingleNumber {
     public int singleNumber(int[] nums) {
         int ans = 0;
+        // ^是异或，相同取0，不同取1
         for (int num : nums) {
             ans ^= num;
         }
