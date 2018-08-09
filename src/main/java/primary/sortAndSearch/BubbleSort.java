@@ -2,6 +2,8 @@ package primary.sortAndSearch;
 
 /**
  * 冒泡排序
+ *
+ * 时间复杂度O(N^2)，额外空间复杂度O(1)
  */
 public class BubbleSort {
     public static int[] bubbleSort(int[] arr) {
