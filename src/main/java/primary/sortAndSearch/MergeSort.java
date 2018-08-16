@@ -22,7 +22,7 @@ public class MergeSort {
         if (l == r) {
             return;
         }
-        int mid = l + ((r - l) >> 1);
+        int mid = l + ((r - l) >> 1);// 等同于(L + R) / 2
         mergeSort(arr, l, mid);
         mergeSort(arr, mid + 1, r);
         merge(arr, l, mid, r);
