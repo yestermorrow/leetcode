@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  *
- * 归并排序
+ * 归并 排序
  *
  * T(N) = 2T(N/2) + O(1)
  * 所以计算的时间复杂度为：O(N)
